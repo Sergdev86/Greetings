@@ -10,10 +10,10 @@ public class GreetingTimeZonedTest {
     @Test
     public void testSayHello(){
 
-        assertEquals("Good night, Tokyo", GreetingTimeZoned.salute(0, GreetingTimeZoned.TimesOfDay.NIGHT, "Tokyo"));
-        assertEquals("Good morning, Tokyo", GreetingTimeZoned.salute(6, GreetingTimeZoned.TimesOfDay.MORNING, "Tokyo"));
-        assertEquals("Good day, Tokyo", GreetingTimeZoned.salute(9, GreetingTimeZoned.TimesOfDay.DAY, "Tokyo"));
-        assertEquals("Good evening, Tokyo", GreetingTimeZoned.salute(19, GreetingTimeZoned.TimesOfDay.EVENING, "Tokyo"));
+        assertEquals("Good night, Tokyo!", GreetingTimeZoned.salute(0, GreetingTimeZoned.TimesOfDay.NIGHT, "Tokyo"));
+        assertEquals("Good morning, Tokyo!", GreetingTimeZoned.salute(6, GreetingTimeZoned.TimesOfDay.MORNING, "Tokyo"));
+        assertEquals("Good day, Tokyo!", GreetingTimeZoned.salute(9, GreetingTimeZoned.TimesOfDay.DAY, "Tokyo"));
+        assertEquals("Good evening, Tokyo!", GreetingTimeZoned.salute(19, GreetingTimeZoned.TimesOfDay.EVENING, "Tokyo"));
 
     }
 
