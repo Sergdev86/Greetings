@@ -8,7 +8,7 @@ public class GreetingTimeZonedTest {
 
 
     @Test
-    public void testSayHello(){
+    public void testSalute(){
 
         assertEquals("Good night, Tokyo!", GreetingTimeZoned.salute(0, GreetingTimeZoned.TimesOfDay.NIGHT, "Tokyo"));
         assertEquals("Good morning, Tokyo!", GreetingTimeZoned.salute(6, GreetingTimeZoned.TimesOfDay.MORNING, "Tokyo"));
