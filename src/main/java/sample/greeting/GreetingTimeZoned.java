@@ -31,7 +31,7 @@ public class GreetingTimeZoned {
     public static String salute(int currentTime, TimesOfDay timesOfDay, String cityName) {
         String time = timesOfDay.name().toLowerCase();
         String greeting = "";
-        if("night".equals(timesOfDay)){
+        if("night".equalsIgnoreCase(timesOfDay.name())){
             if(currentTime >= timesOfDay.start || currentTime < timesOfDay.end){
                 greeting = message.getString("greeting.".concat(time));
                 greeting = greeting.concat(" ").concat(cityName).concat("!");
